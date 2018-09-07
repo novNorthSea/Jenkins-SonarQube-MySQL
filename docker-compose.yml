@@ -7,7 +7,7 @@ services:
     networks:
       - sonarnet
     ports:
-      - "33062:3306"
+      - "3306:3306"
       - "33060:33060"
     environment:
       - MYSQL_ROOT_PASSWORD=123456
@@ -62,7 +62,7 @@ services:
       - sonarnet
     ports:
       - "8080:8080"
-      - "50001:50000"
+      - "50000:50000"
     networks:
       - sonarnet
     volumes:
